@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Opinion Surveys on WiFi Wireless at Whitechapel</title>
+<link rel="stylesheet" href="/media/document.css" type="text/css">
+<!--
+<meta name="keywords" content="information technology services network services networking firewall dhcp dns college blocked machines">
+-->
+</head><body>
+
+<div class="banner">
+ <p class="logo"><a href="http://www.qmul.ac.uk/"><img src="/media/qm_logo.gif" alt="Queen Mary, University of London" border="0" height="62"></a></p>
+</div>
+
+<p>
+    IT Services are planning to upgrade the WiFi system at Whitechapel.
+    The WiFi systems available have been evaluated and there are a small
+    number of competing systems on a "short list". To complete the work
+    of choosing the most suitable system some trials will be conducted
+    at Whitechapel in the Blizard Building; chosen because it presents
+    a "challenging" environment for radio signals. We are asking people
+    who use the building to complete some surveys to help us assess the
+    performance of the competing systems. The first survey is to assess
+    the state of the old system to help assess how much the new systems
+    improve on the old one as each is trialed. The second survey is to
+    evaluate the first set of trial equipment; it essentially asks the
+    same as the first survey with a couple of extra questions asking
+    directly if you have noticed any change in the quality of the service.
+</p>
+<p>
+    <table>
+    <tr><td> Survey </td></tr>
+    {% for survey in surveys %}
+        <tr><td> <a href=" {{ survey.link }} "> {{ survey.description }} </a></td></tr>
+    {% endfor %}
+    </table>
+</p>
+
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Opinion Survey on WiFi Wireless at Whitechapel -- the old service</title>
+<link rel="stylesheet" href="/media/document.css" type="text/css">
+<!--
+<meta name="keywords" content="information technology services network services networking firewall dhcp dns college blocked machines">
+-->
+</head><body>
+
+<div class="banner">
+ <p class="logo"><a href="http://www.qmul.ac.uk/"><img src="/media/qm_logo.gif" alt="Queen Mary, University of London" border="0" height="62"></a></p>
+</div>
+
+<p>
+    This is a survey about WiFi provision within the Blizard Building at Whitechapel during
+    the period from 15th April to 14th May 2010. It is intended to guage the quality of the service offered
+    by the second set of equipment under trial by asking the same set of questions as the
+    first, base-line, survey; and also some comparitive questions. As before, you can answer
+    this survey more than once if, for examples you have different experiences is different
+    parts of the building, or using different devices.
+<br>
+    Please note that this equipment has only been used to provide services via the "eduroam"
+    SSID; other SSIDs have been using older equipment and if you have not been using "eduroam"
+    you should not answer this questionaire.
+    <form action="" method="POST">
+        <table>
+         <tr>
+          <td>
+           <table>
+            <tr><td>
+             <p> Please indicate if you use WiFi or, if you don't, why you don't </p>
+             <p> {{ form.uses_wifi }} </p>
+             <p> {{ form.uses_wifi.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please rate the coverage inside the Blizard Building </p>
+             <p> {{ form.coverage }} </p>
+             <p> {{ form.coverage.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please rate the speed inside the Blizard Building </p>
+             <p> {{ form.speed }} </p>
+             <p> {{ form.speed.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate the type of device you use </p>
+             <p> {{ form.what }} </p>
+             <p> {{ form.what.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate who owns the device you use </p>
+             <p> {{ form.whos }} </p>
+             <p> {{ form.whos.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate who administers the device you use </p>
+             <p> {{ form.admins }} </p>
+             <p> {{ form.admins.errors }} </p>
+            </td></tr>
+           </table>
+          </td>
+          <td>
+           <table>
+            <tr><td>
+             <p> Please indicate where you use WiFi within the Blizard Building, in particular which floor </p>
+             <p> {{ form.where }} </p>
+             <p> {{ form.where.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate where else you would like to use it inside the building </p>
+             <p> {{ form.whereelse }} </p>
+             <p> {{ form.whereelse.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please add any other comments you might like to make about WiFi provision at Whitechapel </p>
+             <p> {{ form.comments }} </p>
+             <p> {{ form.comments.errors }} </p>
+            </td></tr>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td> The following questions ask you to compare the service during late April and early May with the service available until the end of last year. </td>
+         </tr>
+         <tr>
+          <td>
+           <table>
+            <tr><td>
+             <p> Please indicate if you have noticed a change in coverage compared with the service last year </p>
+             <p> {{ form.c_cover }} </p>
+             <p> {{ form.c_cover.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate if you have noticed a change in speed compared with the service last year </p>
+             <p> {{ form.c_speed }} </p>
+             <p> {{ form.c_speed.errors }} </p>
+            </td></tr>
+            <tr><td>
+             <p> Please indicate if you have noticed any difficulties when moving around the building, and if you have please give details in the comment box on the right </p>
+             <p> {{ form.c_roams }} </p>
+             <p> {{ form.c_roams.errors }} </p>
+            </td></tr>
+           </table>
+          </td>
+          <td>
+           <table>
+            <tr><td>
+             <p> Please add any other comments about how the service has compared with the service last year </p>
+             <p> {{ form.c_comment }} </p>
+             <p> {{ form.c_comment.errors }} </p>
+            </td></tr>
+           </table>
+          </td>
+         </tr>
+        </table>
+    <input type="submit" value="Submit" />
+    </form>
+</p>
+
+</body></html>
